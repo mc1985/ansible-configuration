@@ -1,0 +1,11 @@
+- hosts: all
+  ansible_user: config
+  become: yes
+  become_user: root
+
+  roles:
+    - os-configure
+    - pkg
+    - docker
+    - consul-agent
+    - vault-agent
