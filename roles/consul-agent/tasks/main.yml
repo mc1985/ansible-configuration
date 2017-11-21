@@ -1,0 +1,4 @@
+- name: Copy Consul start script
+
+
+- name: Start Consul Agent

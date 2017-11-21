@@ -1,0 +1,13 @@
+- name: Install packages
+  yum: name={{item}} state=latest
+  with_items:
+  - epel-release
+  - cifs-utils
+  - jq
+  - git
+  - python-pip
+  - net-tools
+  - bind-utils
+
+- name: Update Package
+  yum: name=* state=latest
